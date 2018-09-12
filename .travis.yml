@@ -7,8 +7,7 @@ services:
 before_install:
 - docker pull f5devcentral/containthedocs
 # Skip requirements installation; packages are already in containthedocs
-install:
-- npm install rename -g
+install: true
 # Test docs build, grammar, and links
 script:
 - make docker-testdocs
