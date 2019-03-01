@@ -1,15 +1,16 @@
 sudo: required
+language: python
 services:
 - docker
 # Pull container image from Docker Hub
 before_install:
 - docker pull f5devcentral/containthedocs
 # Skip requirements installation; packages are already in containthedocs
-install: 
+install:
 - pip install awscli --upgrade --user
 # Test docs build, grammar, and links
 script:
-- make docker-testdocs
+- ./scripts/test-docs.sh
 # Publish docs to clouddocs.f5.com/products/agc/v2.0
 deploy:
 - provider: script
@@ -18,5 +19,4 @@ deploy:
     branch: 3.0
     repo: f5devcentral/f5-bigip-agc-config-guides
   script:
-  - ./scripts/deploy-docs.sh 
-  
+  - ./scripts/deploy-docs.sh
