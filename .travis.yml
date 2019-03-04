@@ -10,7 +10,7 @@ before_install:
 install: true
 # Test docs build, grammar, and links
 script:
-- make docker-testdocs
+- ./scripts/test-docs.sh
 # Publish docs to clouddocs.f5.com/products/agc/v2.0
 deploy:
 - provider: script

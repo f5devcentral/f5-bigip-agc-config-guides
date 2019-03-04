@@ -34,7 +34,8 @@ extensions = [
     'sphinx.ext.ifconfig',
     'sphinx.ext.intersphinx',
     'sphinxjp.themes.basicstrap',
-    'cloud_sptheme.ext.table_styling'
+    'cloud_sptheme.ext.table_styling',
+    'recommonmark'
 ]
 
 # Add any paths that contain templates here, relative to this directory.
@@ -44,7 +45,13 @@ templates_path = ['_templates']
 # You can specify multiple suffix as a list of string:
 #
 # source_suffix = ['.rst', '.md']
-source_suffix = '.rst'
+# source_suffix = '.rst'
+source_suffix = {
+  '.rst': 'restructuredtext',
+  '.txt': 'markdown',
+  '.md': 'markdown',
+}
+
 
 # The encoding of source files.
 #
