@@ -55,7 +55,7 @@ Deploy the Configuration
 
 #. Deploy the configuration from the :guilabel:`Summary` screen.
 #. To retrieve the metadata for this configuration, navigate to :menuselection:`Access -> Federation -> Saml Identity Provider -> Local Idp Services`.
-#. Select the SAML SSO object created for for IBM SmartCloud for Social Business, and click :guilabel:`Export Metadata`.
+#. Select the SAML SSO object created for IBM SmartCloud for Social Business, and click :guilabel:`Export Metadata`.
 #. Use the exported IdP SAML Metadata to configure the IdP Provider configuration in the IBM SmartCloud for Social Business service.
 
 Setup IBM SmartCloud for Social Business as SAML Service Provider
