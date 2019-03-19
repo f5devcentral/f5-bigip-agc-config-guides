@@ -29,8 +29,8 @@ IDP Connector Specific Properties
 ---------------------------------
 
 To configure Idaptive provide following inputs:
-	- :guilabel:`SSO URL` : Provide the SSO URL configured in Centrify/Idaptive. The URL should be in a format like this example: https://abcd0100.my.centrify.com/applogin/appKey/1234abcde-51c9-461c-a3bf-1234abcde/customerId/abcd0100
-	- :guilabel:`Entity ID / SAML Issuer URL` : Provide the Issuer URL configured in Centrify/Idaptive. The entity ID should be in the format https://cloud.centrify.com/SAML/appspecificName.
+	- :guilabel:`SSO URL` : Provide the SSO URL configured in Idaptive. The URL should be in a format like this example: https://abcd0100.my.idaptive.com/applogin/appKey/1234abcde-51c9-461c-a3bf-1234abcde/customerId/abcd0100
+	- :guilabel:`Entity ID / SAML Issuer URL` : Provide the Issuer URL configured in Idaptive. The entity ID should be in the format https://cloud.idaptive.com/SAML/appspecificName.
 
 Advanced Connector Settings
 ---------------------------

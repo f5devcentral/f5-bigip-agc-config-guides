@@ -55,7 +55,7 @@ Deploy the Configuration
 
 #. Deploy the configuration from the :guilabel:`Summary` screen.
 #. To retrieve the metadata for this configuration, navigate to :menuselection:`Access -> Federation -> Saml Identity Provider -> Local Idp Services`.
-#. Select the SAML SSO object created for for KnowBe4, and click :guilabel:`Export Metadata`.
+#. Select the SAML SSO object created for KnowBe4, and click :guilabel:`Export Metadata`.
 #. Use the exported IdP SAML Metadata to configure the IdP Provider configuration in the KnowBe4 service.
 
 Setup KnowBe4 as SAML Service Provider

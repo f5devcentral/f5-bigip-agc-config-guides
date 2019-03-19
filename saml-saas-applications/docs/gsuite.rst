@@ -57,7 +57,7 @@ Deploy the Configuration
 
 #. Deploy the configuration from the :guilabel:`Summary` screen.
 #. To retrieve the metadata for this configuration, navigate to :menuselection:`Access -> Federation -> Saml Identity Provider -> Local Idp Services`.
-#. Select the SAML SSO object created for for Google Suite, and click :guilabel:`Export Metadata`.
+#. Select the SAML SSO object created for Google Suite, and click :guilabel:`Export Metadata`.
 #. Use the exported IdP SAML Metadata to configure the IdP Provider configuration in the Google Suite service.
 
 Setup Google Suite as SAML Service Provider
