@@ -10,12 +10,12 @@ install: true
 # Test docs build, grammar, and links
 script:
 - ./scripts/test-docs.sh
-# Publish docs to clouddocs.f5.com/products/agc/v2.0
+# Publish docs to clouddocs.f5.com/products/agc/v5.0
 deploy:
 - provider: script
   skip_cleanup: true
   on:
-    branch: 3.0
+    branch: 5.0
     repo: f5devcentral/f5-bigip-agc-config-guides
   script:
   - ./scripts/deploy-docs.sh 
