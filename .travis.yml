@@ -5,8 +5,8 @@ services:
 # Pull container image from Docker Hub
 before_install:
 - docker pull f5devcentral/containthedocs
-# Skip requirements installation; packages are already in containthedocs
-install:
+# install aws-cli
+install: 
 - pip install awscli --upgrade
 # Test docs build, grammar, and links
 script:
