@@ -10,12 +10,34 @@ install: true
 # Test docs build, grammar, and links
 script:
 - ./scripts/test-docs.sh
-# Publish docs to clouddocs.f5.com/products/agc/v5.0
+
 deploy:
-- provider: script
+# Publish docs to clouddocs.f5networks.net/products/agc/${version_branch}
+- provider: s3
   skip_cleanup: true
+  access_key_id: $AWS_ACCESS_KEY_ID
+  secret_access_key: $AWS_SECRET_ACCESS_KEY
+  bucket: clouddocs.f5networks.net
+  local_dir: docs/_build/html
+  upload_dir: products/agc/$TRAVIS_BRANCH
   on:
-    branch: 5.0
+    all_branches: true
     repo: f5devcentral/f5-bigip-agc-config-guides
-  script:
-  - ./scripts/deploy-docs.sh 
+# DEPLOY TO PRODUCTION
+# Publish docs to clouddocs.f5.com/products/agc/${version_branch}
+- provider: s3
+  skip_cleanup: true
+  access_key_id: $AWS_ACCESS_KEY_ID
+  secret_access_key: $AWS_SECRET_ACCESS_KEY
+  bucket: clouddocs.f5.com
+  local_dir: docs/_build/html
+  upload_dir: products/agc/$TRAVIS_BRANCH
+  on:
+    branch: "$TRAVIS_BRANCH" =~ ^v[0-9]+\.[0-9]+
+    repo: f5devcentral/f5-bigip-agc-config-guides
+
+after_deploy:
+  - | 
+     if [[ "$TRAVIS_BRANCH" =~ ^v[0-9]+\.[0-9]+ ]]; then
+         aws cloudfront create-invalidation --distribution-id $AWS_DIST_ID --paths /products/agc/$TRAVIS_BRANCH/
+     fi
