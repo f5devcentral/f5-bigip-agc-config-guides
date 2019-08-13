@@ -4,7 +4,8 @@ services:
 - docker
 # Pull container image from Docker Hub
 before_install:
-- docker pull f5devcentral/containthedocs
+- docker pull f5devcentral/containthedocs:latest
+
 # install aws-cli
 install: 
 - pip install awscli --upgrade
