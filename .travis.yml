@@ -5,6 +5,7 @@ services:
 # Pull container image from Docker Hub
 before_install:
 - docker pull f5devcentral/containthedocs:latest
+
 # install aws-cli
 install: 
 - pip install awscli --upgrade
@@ -36,10 +37,10 @@ deploy:
   on:
     all_branches: true
     repo: f5devcentral/f5-bigip-agc-config-guides
-    condition: $TRAVIS_BRANCH =~ ^[0-9]+\.[0-9]+
+    condition: $TRAVIS_BRANCH =~ ^v[0-9]+\.[0-9]+
   
 after_deploy:
   - | 
-     if [[ "$TRAVIS_BRANCH" =~ ^[0-9]+\.[0-9]+ ]]; then
+     if [[ "$TRAVIS_BRANCH" =~ ^v[0-9]+\.[0-9]+ ]]; then
          aws cloudfront create-invalidation --distribution-id $AWS_DIST_ID --paths /products/agc/$TRAVIS_BRANCH/
      fi
