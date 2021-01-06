@@ -59,7 +59,8 @@ Before you begin, follow the steps below to register the app and request permiss
 
 4. Grant admin consent for your organization's directory.
 5. Copy the Client ID, Client Secret, and Tenant ID and add them to the Azure AD Application configuration.
-   Refer `Quickstart: Configure a client application to access web APIs <https://docs.microsoft.com/en-us/azure/active-directory/develop/quickstart-configure-app-access-web-apis>`_ for more information.
+   
+Refer `Quickstart: Configure a client application to access web APIs <https://docs.microsoft.com/en-us/azure/active-directory/develop/quickstart-configure-app-access-web-apis>`_ for more information.
 
 
 GC API Reference

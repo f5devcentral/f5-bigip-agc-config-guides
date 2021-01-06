@@ -23,6 +23,7 @@ help:
 .PHONY: source-cleanup
 source-cleanup:
 	rm -rf $(SOURCEDIR)/saml-*
+	rm -rf $(SOURCEDIR)/guided-*
 
 # combine docs into /source and build
 .PHONY: docs

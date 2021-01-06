@@ -8,5 +8,6 @@ set -x
 make source-cleanup
 
 # Copy docs to source directory
+cp -R ./guided-config-api/docs ./docs/source/guided-config-api/
 cp -R ./saml-idp-connector/docs ./docs/source/saml-idp-connector/
 cp -R ./saml-saas-applications/docs ./docs/source/saml-saas-applications/

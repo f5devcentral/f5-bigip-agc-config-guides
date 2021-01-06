@@ -7,7 +7,7 @@ REM Command file for Sphinx documentation
 if "%SPHINXBUILD%" == "" (
 	set SPHINXBUILD=python -msphinx
 )
-set SOURCEDIR=source
+set SOURCEDIR=docs/source
 set BUILDDIR=build
 set SPHINXPROJ=myproject
 
@@ -34,6 +34,7 @@ goto end
 
 if "%1" == "source-cleanup" (
 	rm -rf %SOURCEDIR%/saml-*
+	rm -rf %SOURCEDIR%/guided-*
 	goto end
 )
 if "%1" == "docs" (
