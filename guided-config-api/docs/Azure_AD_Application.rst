@@ -66,4 +66,4 @@ Refer `Quickstart: Configure a client application to access web APIs <https://do
 GC API Reference
 -----------------
 
-For Guided Configuration API and Schema Reference, click `Guided Configuration API v1.0 <https://clouddocs.f5networks.net/products/agc-api/1.0/apidocs.html>`_.
+For Guided Configuration API and Schema Reference, click `Guided Configuration API v1.0 <https://clouddocs.f5.com/products/agc-api/1.0/apidocs.html>`_.
