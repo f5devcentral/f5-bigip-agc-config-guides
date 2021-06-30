@@ -20,7 +20,7 @@ For :guilabel:`API Protection Proxy`, refer to the Guided Configuration API: API
 
 For :guilabel:`Azure AD Application`, refer to the Guided Configuration API: Azure AD Application in the table of contents on the left.
 
-For Guided Configuration API and Schema Reference, click `Guided Configuration API v1.0 <https://clouddocs.f5networks.net/products/agc-api/1.0/apidocs.html>`_.
+For Guided Configuration API and Schema Reference, click `Guided Configuration API v1.0 <https://clouddocs.f5.com/products/agc-api/1.0/apidocs.html>`_.
 
 
 .. toctree::
